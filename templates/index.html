@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>HackProphecy</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+		<!--[if lte IE 8]><script src="{{ url_for('static', filename='js/ie/html5shiv.js') }}"></script><![endif]-->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="{{ url_for('static', filename='css/ie8.css') }}" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="{{ url_for('static', filename='css/ie9.css') }}" /><![endif]-->
+	</head>
+	<body>
+        <div style="float:left">
+		<!-- Header -->
+			<header id="header">
+				<h1>HackProphecy</h1>
+				<p>Foreseeing the success of your hack<br /></p>
+			</header>
+
+		<!-- Signup Form -->
+			<form id="signup-form" method="post" action="#">
+				<input type="text" name="url" id="url" placeholder="Devpost URL" />
+				<input type="submit" value="Predict" />
+			</form>
+            
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://github.com/gvsi/HackathonWinnerPredictor/" class="icon fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; 2015</li><li> Developed at HackNotts 2015</li>
+				</ul>
+			</footer>
+        </div>
+        <div style="float:right"><pre id="debuginfo"></pre></div>
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="{{ url_for('static', filename='js/ie/respond.min.js') }}"></script><![endif]-->
+			
+			<script src="{{ url_for('static', filename='js/jquery-2.1.4.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+			<script src="{{ url_for('static', filename='js/animateText.js') }}"></script>
+
+	</body>
+</html>

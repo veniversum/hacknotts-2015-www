@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HackPredict - {% block title %} Default Title {% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/materialize.css') }}" />
+</head>
+
+<body>
+    {% block js %}{% endblock %}
+    <div class="navbar-fixed" role="navigation">
+        <nav>
+            <div class="nav-wrapper container">
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div id="content" class="container">
+        {% block content %}
+        <h1>No content!</h1> {% endblock %}
+    </div>
+</body>
+
+</html>
