@@ -1,4 +1,5 @@
 # HackProphecy
+Hosted on OpenShift at http://hackprophecy.veniversum.me/
 ## About
 HackProphecy predicts if a hack wins at a hackathon, using machine learning methods with data scraped from [devpost](http://devpost.com/)
 

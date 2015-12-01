@@ -10,9 +10,9 @@ import pickle
 from sklearn.externals import joblib
 
 pkl_file = open(os.path.join(os.path.dirname(__file__),'matrix.pkl'), 'rb')
-itemplist = pickle.load(pkl_file, encoding='latin1')
+#itemplist = pickle.load(pkl_file, encoding='latin1')
 pkl_file.close()
-a = itemplist.todense().tolist()
+#a = itemplist.todense().tolist()
 
 clf = joblib.load(os.path.join(os.path.dirname(__file__),'clf.pkl'))
 
